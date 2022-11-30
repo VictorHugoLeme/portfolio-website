@@ -1,36 +1,27 @@
 import React from 'react'
-import Header from './components/header/Header'
-import Nav from './components/nav/Nav'
-import About from './components/about/About'
-import Experience from './components/experience/Experience'
-import Services from './components/services/Services'
-import Portfolio from './components/portfolio/Portfolio'
-import Contact from './components/contact/Contact'
-import Footer from './components/footer/Footer'
-import background from './assets/background.png'
-import "./index.css"
+import { Provider } from 'react-redux'
+import { createStoreHook } from 'react-redux'
+import { reducer } from './redux/reducers'
+import PortfolioApp from './components/portfolio/PortfolioApp'
 
+const store = createStoreHook(
+    reducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 
+)
 
 const App = () => {
-    if (!localStorage.getItem('backgroundImage')) {
-        localStorage.setItem('backgroundImage', background);
+    var portfolio = true;
+    if (portfolio) {
+        return (
+            <PortfolioApp />
+        )
+    } else {
+        return (
+            <>
+                <h1>Henlo</h1>
+            </>
+        )
     }
-    var bgImg = localStorage.getItem('backgroundImage');
-    document.body.style.backgroundImage = "url(" + bgImg + ")";
-
-    return (
-        <>
-            <Header />
-            <Nav />
-            <About />
-            <Experience />
-            <Services />
-            <Portfolio />
-            <Contact />
-            <Footer />
-        </>
-    )
 }
 
 export default App

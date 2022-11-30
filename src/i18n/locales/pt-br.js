@@ -70,6 +70,10 @@ const ptBr = {
             },
             item2: {
                 title: "Meu próprio site!",
+            },
+            item3: {
+                title: "Meus estudos",
+                button: "Veja mais"
             }
         },
         contact: {

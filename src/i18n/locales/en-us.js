@@ -70,6 +70,10 @@ const enUs = {
             },
             item2: {
                 title: "My Own portfolio website",
+            },
+            item3: {
+                title: "My Studies!",
+                button: "See more"
             }
         },
         contact: {
