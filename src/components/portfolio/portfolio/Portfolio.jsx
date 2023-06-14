@@ -19,7 +19,6 @@ class Portfolio extends React.Component {
                         </div>
                         <h3><Translator path='portfolio.item1.title' /></h3>
                         <div className="portfolio__item-links">
-                            {/* <a href="https://github.com/VictorHugoLeme/portfolio-website" className='btn'>Github</a> */}
                             <a href="https://metalcleanindustrial.com.br/" className='btn btn-primary' target='_blank' rel="noreferrer"><Translator path='portfolio.demo' /></a>
                         </div>
                     </article>
@@ -30,7 +29,6 @@ class Portfolio extends React.Component {
                         <h3><Translator path='portfolio.item2.title' /></h3>
                         <div className="portfolio__item-links">
                             <a href="https://github.com/VictorHugoLeme/portfolio-website" className='btn btn-primary' target='_blank' rel="noreferrer">Github</a>
-                            {/* <a href="#" className='btn btn-primary' target='_blank'><Translator path='portfolio.demo' /></a> */}
                         </div>
                     </article>
                     <article className="portfolio__item">
@@ -42,7 +40,6 @@ class Portfolio extends React.Component {
                             <a href="https://victorhugoleme.github.io/bc-dio-js/" className='btn btn-primary' target='_blank' rel="noreferrer">
                                 <Translator path='portfolio.item3.button' />
                             </a>
-                            {/* <a href="#" className='btn btn-primary' target='_blank'><Translator path='portfolio.demo' /></a> */}
                         </div>
                     </article>
                 </div >

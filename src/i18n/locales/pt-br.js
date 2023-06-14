@@ -13,7 +13,7 @@ const ptBr = {
             title: "saiba mais",
             subtitle: "Sobre mim!",
             experience: "Experiência",
-            time: "1 ano",
+            time: "2 anos",
             clients: "Clientes",
             clientsNumber: "2 clientes já satisfeitos!",
             projects: "Projetos",
@@ -26,7 +26,7 @@ const ptBr = {
             subtitle: "Experiência",
             frontend: "Desenvolvimento Frontend",
             backend: "Desenvolvimento Backend",
-            experienced: "Experiente",
+            experienced: "Avançado",
             intermediate: "Intermediário",
         },
         services: {
@@ -41,16 +41,18 @@ const ptBr = {
                 item5: "Manutenção",
                 item6: "Optimização de SEO",
                 item7: "Analytics",
+                item8: "Acessibilidade"
 
             },
             backend: "Desenvolvimento Backend",
             backendl: {
-                item1: "APIs e Restful APIs",
-                item2: "Microservices",
-                item3: "Banco de dados e modelagem de dados",
-                item4: "Programação Reativa",
-                item5: "CI/CD para sua aplicação",
-                item6: "Manutenção",
+                item1: "Computação em nuvem com AWS",
+                item2: "Soluções arquiteturais para seu negócio",
+                item3: "Restful APIs",
+                item4: "Banco de dados e modelagem de dados",
+                item5: "Programação Reativa",
+                item6: "CI/CD para sua aplicação",
+                item7: "Manutenção"
             },
             UI: "UI/UX Design",
             UIl: {

@@ -13,7 +13,7 @@ const enUs = {
             title: "Get to know",
             subtitle: "about me!",
             experience: "Experience",
-            time: "1 year",
+            time: "2 years",
             clients: "Clients",
             clientsNumber: "2 satisfied clients already!",
             projects: "Projects",
@@ -41,16 +41,18 @@ const enUs = {
                 item5: "Maintenance",
                 item6: "SEO optmimization",
                 item7: "Analytics",
+                item8: "Accessibility"
 
             },
             backend: "Backend Development",
             backendl: {
-                item1: "APIs and Restful APIs",
-                item2: "Microservices",
-                item3: "Database and Data modeling",
-                item4: "Reactive programming",
-                item5: "CI/CD for your application",
-                item6: "Maintenance",
+                item1: "Cloud computing with AWS",
+                item2: "Architectural solutions for your business",
+                item3: "Restful APIs",
+                item4: "Database and Data modeling",
+                item5: "Reactive programming",
+                item6: "CI/CD for your application",
+                item7: "Maintenance"
             },
             UI: "UI/UX Design",
             UIl: {
