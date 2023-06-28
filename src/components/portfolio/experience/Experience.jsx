@@ -63,8 +63,8 @@ const Experience = () => {
                 <div className="experience__frontend">
                     <h3><Translator path='experience.frontend' /></h3>
                     <div className="experience__content">
-                        {[...frontEndExperience].map((item) => {
-                            return (
+                        {[...frontEndExperience].map(item =>
+                            <li key={item.name}>
                                 <article className='experience__details'>
                                     <BsPatchCheckFill className='experience__details-icon' />
                                     <div>
@@ -72,16 +72,16 @@ const Experience = () => {
                                         <small className='text-light'><Translator path={item.experience} /></small>
                                     </div>
                                 </article>
-                            )
-                        })}
+                            </li>
+                        )}
                     </div>
                 </div>
                 {/* BACKEND */}
                 <div className="experience__backend">
                     <h3><Translator path='experience.backend' /></h3>
                     <div className="experience__content">
-                        {[...backEndExperience].map((item) => {
-                            return (
+                        {[...backEndExperience].map(item =>
+                            <li key={item.name}>
                                 <article className='experience__details'>
                                     <BsPatchCheckFill className='experience__details-icon' />
                                     <div>
@@ -89,8 +89,8 @@ const Experience = () => {
                                         <small className='text-light'><Translator path={item.experience} /></small>
                                     </div>
                                 </article>
-                            )
-                        })}
+                            </li>
+                        )}
                     </div>
                 </div>
             </div>
