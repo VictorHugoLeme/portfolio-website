@@ -6,6 +6,9 @@ name: Deploy to Firebase Hosting on merge
   push:
     branches:
       - main
+env:
+  CV_ENG: "https://firebasestorage.googleapis.com/v0/b/portfolio-victorhleme.appspot.com/o/cv%2FPOR%2FCvVictorHugoLeme-Fullstack-Developer?alt=media"
+  CV_POR: "https://firebasestorage.googleapis.com/v0/b/portfolio-victorhleme.appspot.com/o/cv%2FPOR%2FCvVictorHugoLeme-Fullstack-Developer?alt=media"
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
