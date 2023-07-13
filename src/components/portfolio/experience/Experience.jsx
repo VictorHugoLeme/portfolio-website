@@ -1,59 +1,21 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import './experience.css'
 import { BsPatchCheckFill } from 'react-icons/bs'
 import Translator from '../i18n/Translator'
+import { getData } from '../../../store/store'
+import Loader from '../loader/Loader';
 
-const frontEndExperience = [
-    {
-        name: "VueJs",
-        experience: "experience.intermediate"
-    },
-    {
-        name: "ReactJs",
-        experience: "experience.intermediate"
-    },
-    {
-        name: "HTML",
-        experience: "experience.experienced"
-    },
-    {
-        name: "CSS",
-        experience: "experience.experienced"
-    },
-    {
-        name: "Javascript",
-        experience: "experience.intermediate"
-    },
-    {
-        name: "Tailwind",
-        experience: "experience.intermediate"
-    }
-]
+export default function Experience() {
 
-const backEndExperience = [
-    {
-        name: "Java",
-        experience: "experience.experienced"
-    },
-    {
-        name: "Spring Boot",
-        experience: "experience.experienced"
-    },
-    {
-        name: "AWS Cloud Computing",
-        experience: "experience.intermediate"
-    },
-    {
-        name: "SQL Databases",
-        experience: "experience.intermediate"
-    },
-    {
-        name: "NoSQL Databases",
-        experience: "experience.intermediate"
-    },
-]
+    const [loadedData, setLoadedData] = useState(null);
 
-const Experience = () => {
+    useEffect(() => {
+        getData()
+            .then(response => {
+                setLoadedData(response)
+            })
+    }, [])
+
     return (
         <section id='experience'>
             <h5><Translator path='experience.title' /></h5>
@@ -62,40 +24,46 @@ const Experience = () => {
                 {/* FRONTEND */}
                 <div className="experience__frontend">
                     <h3><Translator path='experience.frontend' /></h3>
-                    <div className="experience__content">
-                        {[...frontEndExperience].map(item =>
-                            <li key={item.name}>
-                                <article className='experience__details'>
-                                    <BsPatchCheckFill className='experience__details-icon' />
-                                    <div>
-                                        <h4>{item.name}</h4>
-                                        <small className='text-light'><Translator path={item.experience} /></small>
-                                    </div>
-                                </article>
-                            </li>
-                        )}
-                    </div>
+                    {loadedData == null &&
+                        <Loader />}
+                    {loadedData != null &&
+                        <div className="experience__content">
+                            {[...loadedData.experience.frontEndExperience].map(item =>
+                                <li key={item.name}>
+                                    <article className='experience__details'>
+                                        <BsPatchCheckFill className='experience__details-icon' />
+                                        <div>
+                                            <h4>{item.name}</h4>
+                                            <small className='text-light'><Translator path={item.experience} /></small>
+                                        </div>
+                                    </article>
+                                </li>
+                            )}
+                        </div>
+                    }
                 </div>
                 {/* BACKEND */}
                 <div className="experience__backend">
                     <h3><Translator path='experience.backend' /></h3>
-                    <div className="experience__content">
-                        {[...backEndExperience].map(item =>
-                            <li key={item.name}>
-                                <article className='experience__details'>
-                                    <BsPatchCheckFill className='experience__details-icon' />
-                                    <div>
-                                        <h4>{item.name}</h4>
-                                        <small className='text-light'><Translator path={item.experience} /></small>
-                                    </div>
-                                </article>
-                            </li>
-                        )}
-                    </div>
+                    {loadedData == null &&
+                        <Loader />}
+                    {loadedData != null &&
+                        <div className="experience__content">
+                            {[...loadedData.experience.backEndExperience].map(item =>
+                                <li key={item.name}>
+                                    <article className='experience__details'>
+                                        <BsPatchCheckFill className='experience__details-icon' />
+                                        <div>
+                                            <h4>{item.name}</h4>
+                                            <small className='text-light'><Translator path={item.experience} /></small>
+                                        </div>
+                                    </article>
+                                </li>
+                            )}
+                        </div>
+                    }
                 </div>
             </div>
         </section>
     )
 }
-
-export default Experience
