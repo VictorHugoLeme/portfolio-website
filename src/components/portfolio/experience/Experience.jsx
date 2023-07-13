@@ -3,7 +3,6 @@ import './experience.css'
 import { BsPatchCheckFill } from 'react-icons/bs'
 import Translator from '../i18n/Translator'
 import { getData } from '../../../store/store'
-import api from "../../../client/api.js";
 import Loader from '../loader/Loader';
 
 export default function Experience() {
