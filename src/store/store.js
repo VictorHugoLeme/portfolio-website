@@ -1,11 +1,11 @@
 import api from "../client/api.js";
 
 const getData = async () => {
-  return sessionStorage.getItem('data')
-    ? JSON.parse(sessionStorage.getItem('data'))
+  return localStorage.getItem('data')
+    ? JSON.parse(localStorage.getItem('data'))
     : api.get()
       .then(res => {
-        sessionStorage.setItem('data', JSON.stringify(res.data.data))
+        localStorage.setItem('data', JSON.stringify(res.data.data))
         return res.data.data
       })
       .catch(err => {
