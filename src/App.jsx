@@ -1,5 +1,5 @@
 import React from 'react'
-import PortfolioApp from './components/portfolio/PortfolioApp'
+import PortfolioApp from './components/landingPage/PortfolioApp'
 
 const App = () => {
     var portfolio = true;
