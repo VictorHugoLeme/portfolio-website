@@ -4,8 +4,8 @@ import Translator from '../i18n/Translator'
 
 const CTA = () => {
   const { i18n } = useTranslation()
-  const cvEng = "https://firebasestorage.googleapis.com/v0/b/portfolio-victorhleme.appspot.com/o/CV%2FVictorHugoLemeCVen.pdf?alt=media&token=8e8cfd08-5511-41f7-9207-efe8e2ee9b95"
-  const cvPor = "https://firebasestorage.googleapis.com/v0/b/portfolio-victorhleme.appspot.com/o/CV%2FVictorHugoLemeCVpt.pdf?alt=media&token=72a4f032-96d2-4454-b9fa-9cb690fc14ca"
+  const cvEng = "https://firebasestorage.googleapis.com/v0/b/portfolio-victorhleme.appspot.com/o/cv%2FENG%2FCvVictorHugoLeme-Fullstack-Developer?alt=media&token=38e980e5-1854-4961-a2b8-3364ef6ffeda"
+  const cvPor = "https://firebasestorage.googleapis.com/v0/b/portfolio-victorhleme.appspot.com/o/cv%2FPOR%2FCvVictorHugoLeme-Fullstack-Developer?alt=media&token=5407bba1-04e6-476a-a80b-f258fff91e2f"
   let cvVersion = i18n.language === 'pt-BR' ? cvPor : cvEng
 
   return (
