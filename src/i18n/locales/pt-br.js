@@ -18,7 +18,9 @@ const ptBr = {
             clientsNumber: "2 clientes já satisfeitos!",
             projects: "Projetos",
             number: "Mais de 10!",
-            text: "Buscando completar novos desafios e aprender mais a cada dia.",
+            text: "Buscando soluções inteligentes, sustentáveis e escaláveis para o seu negócio",
+            text2: "Meu nome é Victor Leme, sou desenvolvedor fullstack e estou aqui para ajudar você e sua empresa a alcançarem seus objetivos.",
+            text3: "Vamos conversar?",
             contact: "Contato"
         },
         experience: {

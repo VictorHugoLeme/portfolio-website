@@ -44,6 +44,12 @@ const About = () => {
                     <p>
                         <Translator path='about.text' />
                     </p>
+                    <p>
+                        <Translator path='about.text2' />
+                    </p>
+                    <p>
+                        <Translator path='about.text3' />
+                    </p>
                     <a href="#contact" className="btn btn-primary"><Translator path='about.contact' /></a>
                 </div>
             </div>

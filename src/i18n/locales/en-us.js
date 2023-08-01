@@ -18,7 +18,9 @@ const enUs = {
             clientsNumber: "2 satisfied clients already!",
             projects: "Projects",
             number: "10+",
-            text: "Aiming to complete more challenges and learn new things every day.",
+            text: "Looking for smart, sustainable and scalable solutions for your business",
+            text2: "My name is Victor Leme, I'm a fullstack developer and I'm here to help you and your company achieve your goals.",
+            text3: "Let's talk?",
             contact: "Contact"
         },
         experience: {

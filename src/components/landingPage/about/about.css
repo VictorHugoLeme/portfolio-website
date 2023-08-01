@@ -6,7 +6,6 @@
 
 .about__me {
     width: 100%;
-    aspect-ratio: 3/4;
     border-radius: 2rem;
     background: linear-gradient(var(--color-primary), transparent);
     display: grid;
@@ -17,12 +16,12 @@
     transform-origin: center 500px;
     border-radius: 2rem;
     overflow: hidden;
-    transform: rotate(10deg);
+    transform: rotate(10deg) scaleX(-1);
     transition: var(--transition);
 }
 
 .about__me>img:hover {
-    transform: rotate(0deg);
+    transform: rotate(0deg) scaleX(-1);
 }
 
 .about__cards {
