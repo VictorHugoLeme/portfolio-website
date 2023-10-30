@@ -21,14 +21,14 @@ export default function Experience() {
             <h5><Translator path='experience.title' /></h5>
             <h2><Translator path='experience.subtitle' /></h2>
             <div className="experience experience__container">
-                {/* FRONTEND */}
-                <div className="experience__frontend">
-                    <h3><Translator path='experience.frontend' /></h3>
+                {/* BACKEND */}
+                <div className="experience__backend">
+                    <h3><Translator path='experience.backend' /></h3>
                     {loadedData == null &&
                         <Loader />}
                     {loadedData != null &&
                         <div className="experience__content">
-                            {[...loadedData.experience.frontEndExperience].map(item =>
+                            {[...loadedData.experience.backEndExperience].map(item =>
                                 <li key={item.name}>
                                     <article className='experience__details'>
                                         <BsPatchCheckFill className='experience__details-icon' />
@@ -42,14 +42,14 @@ export default function Experience() {
                         </div>
                     }
                 </div>
-                {/* BACKEND */}
-                <div className="experience__backend">
-                    <h3><Translator path='experience.backend' /></h3>
+                {/* FRONTEND */}
+                <div className="experience__frontend">
+                    <h3><Translator path='experience.frontend' /></h3>
                     {loadedData == null &&
                         <Loader />}
                     {loadedData != null &&
                         <div className="experience__content">
-                            {[...loadedData.experience.backEndExperience].map(item =>
+                            {[...loadedData.experience.frontEndExperience].map(item =>
                                 <li key={item.name}>
                                     <article className='experience__details'>
                                         <BsPatchCheckFill className='experience__details-icon' />
